@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Berhasil | Kopi Java</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f4ed;
+            color: #38271e;
+            min-height: 100vh;
+            padding: 25px 15px;
+        }
+
+        .navbar {
+            max-width: 850px;
+            margin: auto;
+            padding: 15px 0 25px;
+        }
+
+        .logo {
+            font-family: Georgia, serif;
+            font-size: 29px;
+            font-weight: bold;
+            color: #593b29;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 570px;
+            margin: 45px auto;
+            text-align: center;
+        }
+
+        .success-card {
+            background: #fffdf9;
+            padding: 40px 28px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        }
+
+        .success-icon {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            background: #e8f1e5;
+            color: #548052;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+        }
+
+        .eyebrow {
+            color: #a07856;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            margin: 13px 0;
+        }
+
+        .description {
+            color: #88796d;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .order-details {
+            text-align: left;
+            background: #f5eee4;
+            padding: 22px;
+            border-radius: 12px;
+            margin: 28px 0;
+        }
+
+        .order-details h2 {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 11px 0;
+            border-bottom: 1px solid #e5d8c8;
+            font-size: 13px;
+        }
+
+        .detail span:first-child {
+            color: #806e5e;
+        }
+
+        .detail strong {
+            text-align: right;
+            overflow-wrap: anywhere;
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 18px;
+            font-size: 15px;
+        }
+
+        .total strong {
+            color: #593b29;
+            font-size: 19px;
+        }
+
+        .status {
+            padding: 16px;
+            background: #e8f1e5;
+            color: #456b43;
+            border-radius: 9px;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 22px;
+        }
+
+        .home-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #593b29;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .home-button:hover {
+            background: #805638;
+        }
+
+        footer {
+            text-align: center;
+            color: #a08d7b;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        @media(max-width: 480px) {
+            .container {
+                margin-top: 25px;
+            }
+
+            .success-card {
+                padding: 32px 19px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            ☕ Kopi Java
+        </a>
+    </header>
+
+    <main class="container">
+
+        <section class="success-card">
+
+            <div class="success-icon">✓</div>
+
+            <span class="eyebrow">
+                TERIMA KASIH TELAH BERBELANJA
+            </span>
+
+            <h1>Pesanan Berhasil!</h1>
+
+            <p class="description">
+                Terima kasih sudah memilih Kopi Java.
+                Pesanan kamu telah berhasil dikonfirmasi.
+            </p>
+
+            <div class="order-details">
+
+                <h2>Detail Pesanan</h2>
+
+                <div class="detail">
+                    <span>Nama Penerima</span>
+                    <strong id="nama"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Produk</span>
+                    <strong id="produk"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Alamat</span>
+                    <strong id="alamat"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Kota / Kode Pos</span>
+                    <strong id="kota"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Nomor HP</span>
+                    <strong id="hp"></strong>
+                </div>
+
+                <div class="detail">
+                    <span>Pembayaran</span>
+                    <strong>COD</strong>
+                </div>
+
+                <div class="total">
+                    <span>Total Pembayaran</span>
+                    <strong id="total"></strong>
+                </div>
+
+            </div>
+
+            <div class="status">
+                ✓ Pesanan kamu sedang diproses.
+                Silakan siapkan pembayaran ketika pesanan diterima.
+            </div>
+
+            <a href="index.html" class="home-button">
+                ← Kembali ke Beranda
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Kopi Java. All Rights Reserved.
+    </footer>
+
+    <script>
+
+        const harga = Number(
+            localStorage.getItem("hargaKopi") || 0
+        );
+
+        function tampilkan(id, key) {
+            document.getElementById(id).textContent =
+                localStorage.getItem(key) || "-";
+        }
+
+        tampilkan("nama", "namaPenerima");
+        tampilkan("produk", "namaKopi");
+        tampilkan("alamat", "alamat");
+        tampilkan("kota", "kota");
+        tampilkan("hp", "hp");
+
+        document.getElementById("total").textContent =
+            "Rp" + harga.toLocaleString("id-ID");
+
+    </script>
+
+</body>
+</html>

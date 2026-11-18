@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Java | Premium Coffee</title>
+    <meta name="description" content="Nikmati pilihan kopi premium Nusantara di Kopi Java.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span>☕</span> Kopi Java
+        </a>
+
+        <nav class="nav-menu">
+            <a href="#beranda">Beranda</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="checkout.html" class="nav-cart">Keranjang 🛒</a>
+            <a href="#akun" class="nav-account">Akun</a>
+        </div>
+    </header>
+
+    <!-- HERO / BANNER -->
+    <main>
+
+        <section class="hero" id="beranda">
+            <div class="hero-content">
+                <span class="eyebrow">PREMIUM COFFEE FROM NUSANTARA</span>
+
+                <h1>Awali Hari dengan<br>
+                    Secangkir <span>Kopi Terbaik.</span>
+                </h1>
+
+                <p>
+                    Temukan cita rasa kopi pilihan dari berbagai
+                    daerah terbaik Indonesia. Nikmati aroma,
+                    kualitas, dan kehangatan dalam setiap tegukan.
+                </p>
+
+                <a href="#produk" class="hero-button">
+                    Jelajahi Kopi →
+                </a>
+
+                <div class="hero-note">
+                    ✦ Pilihan biji kopi berkualitas Nusantara
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85"
+                    alt="Secangkir kopi hangat">
+            </div>
+        </section>
+
+        <!-- KEUNGGULAN -->
+        <section class="features">
+            <div class="feature">
+                <span>☕</span>
+                <div>
+                    <h3>Kualitas Premium</h3>
+                    <p>Biji kopi pilihan</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>🌱</span>
+                <div>
+                    <h3>Kopi Nusantara</h3>
+                    <p>Cita rasa khas Indonesia</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>📦</span>
+                <div>
+                    <h3>Pesan Mudah</h3>
+                    <p>Praktis dari rumah</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUK -->
+        <section class="products-section" id="produk">
+
+            <div class="section-heading">
+                <span class="eyebrow">OUR COLLECTION</span>
+                <h2>Pilih Kopi Favoritmu</h2>
+                <p>Nikmati keistimewaan kopi dari berbagai daerah Indonesia.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- PRODUK 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">BEST SELLER</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=85"
+                            alt="Kopi Arabika Gayo"
+                            loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-origin">ACEH, INDONESIA</span>
+                        <h3>Kopi Arabika Gayo</h3>
+                        <p>Aroma khas dengan cita rasa lembut.</p>
+
+                        <div class="product-bottom">
+                            <strong>Rp35.000</strong>
+                            <button onclick="beli('Kopi Arabika Gayo', 35000)">
+                                Beli +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUK 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=85"
+                            alt="Kopi Robusta Lampung"
+                            loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-origin">LAMPUNG, INDONESIA</span>
+                        <h3>Kopi Robusta Lampung</h3>
+                        <p>Karakter rasa kuat dan aroma khas.</p>
+
+                        <div class="product-bottom">
+                            <strong>Rp28.000</strong>
+                            <button onclick="beli('Kopi Robusta Lampung', 28000)">
+                                Beli +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUK 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">PREMIUM</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=85"
+                            alt="Kopi Luwak"
+                            loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-origin">KOPI PILIHAN</span>
+                        <h3>Kopi Luwak</h3>
+                        <p>Pengalaman cita rasa kopi istimewa.</p>
+
+                        <div class="product-bottom">
+                            <strong>Rp120.000</strong>
+                            <button onclick="beli('Kopi Luwak', 120000)">
+                                Beli +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUK 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=85"
+                            alt="Kopi Toraja"
+                            loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-origin">TORAJA, INDONESIA</span>
+                        <h3>Kopi Toraja</h3>
+                        <p>Rasa khas dengan aroma yang memikat.</p>
+
+                        <div class="product-bottom">
+                            <strong>Rp42.000</strong>
+                            <button onclick="beli('Kopi Toraja', 42000)">
+                                Beli +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROMO -->
+        <section class="promo" id="tentang">
+            <div>
+                <span class="eyebrow">CERITA KOPI NUSANTARA</span>
+                <h2>Satu Cangkir,<br>Banyak Cerita.</h2>
+                <p>
+                    Kopi Java menghadirkan pilihan kopi Nusantara
+                    untuk menemani setiap momen istimewa.
+                </p>
+                <a href="#produk" class="promo-button">
+                    Temukan Pilihanmu →
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="akun">
+        <h2>☕ Kopi Java</h2>
+        <p>Menikmati kehangatan kopi Nusantara.</p>
+        <p class="copyright">
+            © 2026 Kopi Java. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
